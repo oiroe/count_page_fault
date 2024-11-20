@@ -1,4 +1,5 @@
-#include "pf.h"
+#include <stdio.h>
+#include "libft/libft.h"
 
 void	p_flt(char *pid, char **str)
 {
