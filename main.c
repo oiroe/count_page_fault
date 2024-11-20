@@ -76,7 +76,8 @@ void	close_file(int *fd, int size)
 	i = 0;
 	while (i < size)
 	{
-		close(fd[i]);
+		if (fd[i] > 0)
+			close(fd[i]);
 		i++;
 	}
 }
