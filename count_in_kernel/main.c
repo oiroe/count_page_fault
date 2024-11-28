@@ -28,7 +28,7 @@ static int __init	pagefault_counter_init(void)
 	pr_info("Monitoring process PID %d (%s)\n", pid, task->comm);
 	pr_info("Initial minor faults: %lu\n", task->min_flt);
 	pr_info("Initial major faults: %lu\n", task->maj_flt);
-	pr_info("Overall page faults: %lu\n" task->min_flt + task->maj_flt);
+	pr_info("Overall page faults: %lu\n", task->min_flt + task->maj_flt);
 	return (0);
 }
 
