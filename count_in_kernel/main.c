@@ -37,5 +37,7 @@ static void __exit	pagefault_counter_exit(void)
 	pr_info("Page fault counter module exited.\n");
 }
 
+MODULE_LICENSE("GPL");
+
 module_init(pagefault_counter_init);
 module_exit(pagefault_counter_exit);
